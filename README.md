@@ -5,7 +5,16 @@
 This toolkit is based on the work from https://github.com/swaggo/gin-swagger
 
 
-# TODO
+# Usage
 
-- `github.com/macaron-swagger/cmd/macaron-swag`, tools to generate file `./docs/docs.go` base on [goswagger](https://goswagger.io/generate/spec.html) specification.
-- usage document
+```
+cd $project
+
+# you need to install goswagger first
+# go get -u github.com/go-swagger/go-swagger/cmd/swagger
+swagger generate spec -o ./swagger.json
+
+go run $GOPATH/src/github.com/fengbeihong/macaron-swagger/cmd/main.go init swagger.json
+
+# now you have the file docs/docs.go
+```
