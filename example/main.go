@@ -1,4 +1,4 @@
-// Package classification Test API.
+// Package main Test API.
 //
 // the purpose of this application is to provide an application
 // that is using plain go code to define an API
